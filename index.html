@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <script>(function (h) { h.className = h.className.replace('no-js', 'js'); })(document.documentElement);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">Школа питания — Авторский курс по питанию от Елены Сергеевой</title>
+    <meta name="description" content="Школа питания Елены Сергеевой — 8 модулей по нутрициологии + бонусные лекции. Персональный подход к питанию. Запишитесь на консультацию." data-i18n="site_description">
+    <meta name="theme-color" content="#3a2a1f">
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="nav-container" id="top">
+        <nav class="navigation" aria-label="Главная навигация">
+            <a href="#" class="nav-logo" data-i18n="author_name">Елена Сергеева</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">Об авторе</a></li>
+                    <li><a href="#for-whom" class="nav-link" data-i18n="nav_for_whom">Для кого</a></li>
+                    <li><a href="#program" class="nav-link" data-i18n="nav_program">Программа</a></li>
+                    <li><a href="#pricing" class="nav-link" data-i18n="nav_pricing">Тарифы</a></li>
+                    <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="#contacts" class="nav-link" data-i18n="nav_contacts">Контакты</a></li>
+                </ul>
+                <div class="nav-lang" role="radiogroup" aria-label="Выбор языка">
+                    <button type="button" class="lang-btn active" data-lang="ru" aria-label="Русский">RU</button>
+                    <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                    <button type="button" class="lang-btn" data-lang="ro" aria-label="Română">RO</button>
+                </div>
+            </div>
+            <a href="#contacts" class="nav-cta nav-link" data-i18n="nav_cta">Консультация</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Меню" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile navigation overlay -->
+        <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">Об авторе</a></li>
+                <li><a href="#for-whom" class="nav-link" data-i18n="nav_for_whom">Для кого</a></li>
+                <li><a href="#program" class="nav-link" data-i18n="nav_program">Программа</a></li>
+                <li><a href="#pricing" class="nav-link" data-i18n="nav_pricing">Тарифы</a></li>
+                <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+                <li><a href="#contacts" class="nav-link" data-i18n="nav_contacts">Контакты</a></li>
+            </ul>
+            <div class="mobile-nav-cta">
+                <a href="#contacts" class="btn btn--primary" data-i18n="nav_cta">Консультация</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <!-- HERO SPECIALIST BACKGROUND -->
+        <img src="./images/foodhero.png" alt="Елена Сергеева — эксперт по питанию" class="hero-background-image" loading="eager" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-label" data-i18n="hero_label">Авторский курс</span>
+            <h1 class="hero-title" data-i18n="hero_title">Школа питания</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Персональный подход к питанию, основанный на науке и вашем образе жизни</p>
+            <div class="hero-cta">
+                <a href="#contacts" class="btn btn--primary" data-i18n="hero_cta">Записаться на консультацию</a>
+                <a href="#program" class="btn btn--secondary" data-i18n="hero_cta2">Узнать подробнее</a>
+            </div>
+            <button class="scroll-indicator" aria-label="Прокрутить вниз">
+                <span class="scroll-text" data-i18n="hero_scroll">Прокрутите вниз</span>
+                <svg class="scroll-wheel" width="20" height="32" viewBox="0 0 20 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="10" cy="16" r="8.5" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+                    <circle cx="10" cy="6" r="2" fill="currentColor"></circle>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===================== ОБ АВТОРЕ ===================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-header">
+                <span class="section-label" data-i18n="about_label">Об авторе</span>
+                <h2 class="section-title editorial-title" data-i18n="about_title">Пару слов обо мне</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrap">
+                    <!-- ABOUT AUTHOR IMAGE -->
+                    <img src="./images/elena.jpg" alt="Елена Сергеева — специалист по питанию" class="about-image" loading="lazy">
+                    <div class="editorial-number" aria-hidden="true">7</div>
+                </div>
+
+                <div class="about-content">
+                    <div class="editorial-rule"></div>
+                    <h3 class="about-name" data-i18n="author_name">Елена Сергеева</h3>
+                    <p class="about-subtitle" data-i18n="about_role">Сертифицированный интегративный нутрициолог — натуропат</p>
+                    <p class="about-bio" data-i18n="about_bio">🌱 Выпускница Международной Школы Nutrition Expert
+🌱 Член Ассоциации нутрициологов Молдовы
+🌱 Соавтор курса "Нутрициология с нуля"</p>
+
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">3</span>
+                            <span class="stat-label" data-i18n="about_stat_stage">этапа трансформации</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">8</span>
+                            <span class="stat-label" data-i18n="about_stat_weeks">недель программы</span>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="btn btn--outline btn--sm" data-i18n="about_cta">Выбрать тариф</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ДЛЯ КОГО ===================== -->
+    <section class="auditoria section" id="for-whom">
+        <!-- AUDITORIA BACKGROUND -->
+        <div class="auditoria-bg" style="background-image: url('./images/food.jpg')"></div>
+        <div class="auditoria-overlay"></div>
+        <div class="container">
+            <div class="auditoria-header">
+                <span class="section-label section-label--light" data-i18n="auditoria_label">Аудитория</span>
+                <h2 class="section-title editorial-title editorial-title--light" data-i18n="auditoria_title">Кому идеально подойдет авторская Школа питания?</h2>
+                <p class="section-subtitle" data-i18n="auditoria_subtitle">Питание — это фундамент здоровья. Этот курс создан как для тех, кто хочет взять ответственность за самочувствие близких в свои руки, так и для специалистов, которым нужны твердые результаты клиентов.</p>
+            </div>
+
+            <div class="auditoria-grid">
+                <div class="auditoria-item" data-num="1">
+                    <div class="item-num">1</div>
+                    <h3 class="item-title" data-i18n="auditoria_1_title">Женщинам, мамам и беременным</h3>
+                    <p class="item-desc" data-i18n="auditoria_1_desc">Здоровье семьи начинается на кухне, ведь именно из женских рук кормятся все домочадцы. Научитесь грамотно составлять рацион, чтобы заложить крепкий иммунитет и управлять здоровьем близких.</p>
+                </div>
+                <div class="auditoria-item auditoria-item--shifted" data-num="2">
+                    <div class="item-num">2</div>
+                    <h3 class="item-title" data-i18n="auditoria_2_title">Специалистам beauty-сферы</h3>
+                    <p class="item-desc" data-i18n="auditoria_2_desc">Косметологам, подологам, мастерам маникюра. Работайте с причиной, а не следствием. Помогайте клиентам избавляться от проблем с кожей, грибком или ломкостью ногтей изнутри, запуская anti-age процессы на клеточном уровне.</p>
+                </div>
+                <div class="auditoria-item" data-num="3">
+                    <div class="item-num">3</div>
+                    <h3 class="item-title" data-i18n="auditoria_3_title">Массажистам и реабилитологам</h3>
+                    <p class="item-desc" data-i18n="auditoria_3_desc">Усильте эффект от ваших процедур. Узнайте, как питание ускоряет выздоровление, реабилитацию и улучшает эстетику тела.</p>
+                </div>
+                <div class="auditoria-item auditoria-item--right" data-num="4">
+                    <div class="item-num">4</div>
+                    <h3 class="item-title" data-i18n="auditoria_4_title">Тренерам и спортсменам</h3>
+                    <p class="item-desc" data-i18n="auditoria_4_desc">Фитнес, йога и другие направления. Дайте клиентам максимальный и безопасный результат за счет управления рационом и коррекции гормонального фона. Усильте собственную эффективность и защитите здоровье при нагрузках.</p>
+                </div>
+                <div class="auditoria-item" data-num="5">
+                    <div class="item-num">5</div>
+                    <h3 class="item-title" data-i18n="auditoria_5_title">ЗОЖникам и тем, кто ищет себя в новой нише</h3>
+                    <p class="item-desc" data-i18n="auditoria_5_desc">Если вы любите тему здоровья и хотите помогать людям, курс даст вам новую востребованную профессию.</p>
+                </div>
+                <div class="auditoria-item" data-num="6">
+                    <div class="item-num">6</div>
+                    <h3 class="item-title" data-i18n="auditoria_6_title">Всем, кто живет или хочет работать с клиентами в Европе</h3>
+                    <p class="item-desc" data-i18n="auditoria_6_desc">Получите универсальные инструменты для успешного ведения международной практики.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ПРОГРАММА ===================== -->
+    <section class="program section" id="program">
+        <div class="container">
+            <div class="program-header">
+                <span class="section-label" data-i18n="program_label">Программа</span>
+                <h2 class="section-title editorial-title" data-i18n="program_title">Программа курса</h2>
+                <p class="section-subtitle" data-i18n="program_subtitle">Восемь модулей, каждый из которых строится на научных принципах</p>
+            </div>
+
+            <div class="program-steps">
+                <div class="program-step" data-step="1">
+                    <div class="step-line"></div>
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_1_title">Вода — скрытый двигатель метаболизма</h3>
+                        <p class="step-desc" data-i18n="program_mod_1_desc">Откуда берутся отеки, что такое кислотно-щелочное равновесие и какая вода действительно усваивается клетками.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="2">
+                    <div class="step-line"></div>
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_2_title">Белок — строительный материал организма</h3>
+                        <p class="step-desc" data-i18n="program_mod_2_desc">Симптомы дефицита, чтение анализов и расчет вашей личной нормы для иммунитета, гормонов и нервной системы.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="3">
+                    <div class="step-line"></div>
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_3_title">Углеводы — вся правда без мифов</h3>
+                        <p class="step-desc" data-i18n="program_mod_3_desc">Метаболический синдром, реальная правда об инсулине и список анализов для проверки углеводного обмена.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="4">
+                    <div class="step-line"></div>
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_4_title">Жиры — жирам рознь</h3>
+                        <p class="step-desc" data-i18n="program_mod_4_desc">Вся правда о холестерине. Как правильные жиры защищают клетки и снижают ваш биологический возраст.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="5">
+                    <div class="step-line"></div>
+                    <div class="step-num">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_5_title">Гипоксия — коротко о главном</h3>
+                        <p class="step-desc" data-i18n="program_mod_5_desc">Последствия хронической анемии и скрытый железодефицит, который лишает вас энергии.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="6">
+                    <div class="step-line"></div>
+                    <div class="step-num">6</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_6_title">Гормоны, из-за которых ты не худеешь</h3>
+                        <p class="step-desc" data-i18n="program_mod_6_desc">Скрытые причины набора веса. Почему диеты не работают при гормональном дисбалансе.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="7">
+                    <div class="step-line"></div>
+                    <div class="step-num">7</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_7_title">Щитовидная железа — просто о сложном</h3>
+                        <p class="step-desc" data-i18n="program_mod_7_desc">Как поддержать главный «пульт управления» метаболизмом, устранить апатию и вернуть бодрость.</p>
+                    </div>
+                </div>
+                <div class="program-step" data-step="8">
+                    <div class="step-line"></div>
+                    <div class="step-num">8</div>
+                    <div class="step-content">
+                        <h3 class="step-title" data-i18n="program_mod_8_title">Детокс — необходимость или маркетинг</h3>
+                        <p class="step-desc" data-i18n="program_mod_8_desc">Мифы и реальность: как безопасно привести печень в порядок с помощью натуропатических программ очищения.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-bonus">
+                <div class="program-bonus__item">
+                    <div class="bonus-num">+</div>
+                    <h4 class="bonus-title" data-i18n="program_bonus_1_title">🎁 Питание до и после тренировки</h4>
+                    <p class="bonus-desc" data-i18n="program_bonus_1_desc">Как закрепить результат нагрузок и быстро восстановиться.</p>
+                </div>
+                <div class="program-bonus__item">
+                    <div class="bonus-num">+</div>
+                    <h4 class="bonus-title" data-i18n="program_bonus_2_title">🎁 Детское здоровье</h4>
+                    <p class="bonus-desc" data-i18n="program_bonus_2_desc">Что фундаментально влияет на иммунитет и нужно ли сбивать температуру.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ТАРИФЫ ===================== -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <span class="section-label" data-i18n="pricing_label">Тарифы</span>
+                <h2 class="section-title editorial-title" data-i18n="pricing_title">Выберите подходящий формат участия</h2>
+                <p class="section-subtitle" data-i18n="pricing_subtitle">Все тарифы включают доступ к записям лекций и персональную поддержку</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Базовый -->
+                <div class="pricing-plan">
+                    <div class="plan-header">
+                        <span class="plan-num">01</span>
+                        <h3 class="plan-name" data-i18n="pricing_basic_title">Базовый</h3>
+                        <div class="plan-price" data-i18n="pricing_basic_price">90 €</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature" data-i18n="pricing_basic_feature_1">Доступ ко всем лекциям курса в записи.</div>
+                        <div class="feature" data-i18n="pricing_basic_feature_2">Обучение в любое удобное для вас время.</div>
+                    </div>
+                    <button class="btn btn--outline btn--block" data-i18n="pricing_basic_cta">Выбрать</button>
+                </div>
+
+                <!-- Расширенный (Рекомендуемый) -->
+                <div class="pricing-plan pricing-plan--featured">
+                    <div class="plan-header">
+                        <span class="plan-num">02</span>
+                        <div class="plan-badge" data-i18n="pricing_recommended">Рекомендуемый</div>
+                        <h3 class="plan-name" data-i18n="pricing_extended_title">Расширенный</h3>
+                        <div class="plan-price" data-i18n="pricing_extended_price">130 €</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-features__header" data-i18n="pricing_extended_features_intro">Всё, что входит в тариф «Базовый»:</div>
+                        <div class="feature" data-i18n="pricing_extended_feature_1">Личная консультация — онлайн или офлайн, 40–60 минут.</div>
+                        <div class="feature" data-i18n="pricing_extended_feature_2">Глубокий разбор вашего симптоматического теста.</div>
+                        <div class="feature" data-i18n="pricing_extended_feature_3">Расшифровка и разбор ваших анализов.</div>
+                        <div class="feature" data-i18n="pricing_extended_feature_4">Индивидуальные рекомендации по питанию.</div>
+                        <div class="feature" data-i18n="pricing_extended_feature_5">Составление персональной нутрицевтической программы на 3 месяца.</div>
+                    </div>
+                    <button class="btn btn--primary btn--block" data-i18n="pricing_extended_cta">Выбрать</button>
+                </div>
+
+                <!-- VIP -->
+                <div class="pricing-plan">
+                    <div class="plan-header">
+                        <span class="plan-num">03</span>
+                        <h3 class="plan-name" data-i18n="pricing_vip_title">VIP</h3>
+                        <div class="plan-price" data-i18n="pricing_vip_price">230 €</div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="plan-features__header" data-i18n="pricing_vip_features_intro">Всё, что входит в тариф «Расширенный»:</div>
+                        <div class="feature" data-i18n="pricing_vip_feature_1">лекции.</div>
+                        <div class="feature" data-i18n="pricing_vip_feature_2">консультация.</div>
+                        <div class="feature" data-i18n="pricing_vip_feature_3">разбор анализов.</div>
+                        <div class="feature" data-i18n="pricing_vip_feature_4">персональная программа.</div>
+                        <div class="plan-features__header plan-features__header--additional" data-i18n="pricing_vip_additional">Дополнительно:</div>
+                        <div class="feature feature--extra" data-i18n="pricing_vip_feature_extra">Моё личное сопровождение на протяжении 3 месяцев — ответы на вопросы, корректировка программы и поддержка на пути к вашему здоровью.</div>
+                    </div>
+                    <button class="btn btn--outline btn--block" data-i18n="pricing_vip_cta">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== СПЕЦИАЛЬНЫЙ БОНУС ===================== -->
+    <section class="promo section" id="promo">
+        <div class="container">
+            <div class="promo-card">
+                <div class="promo-content">
+                    <span class="promo-gift" data-i18n="promo_gift">🎁</span>
+                    <h3 class="promo-title" data-i18n="promo_title">Скидка 20 € на любой тариф</h3>
+                    <p class="promo-text" data-i18n="promo_desc">При оформлении заказа введите промокод и получите скидку 20 € на абсолютно любой выбранный тариф.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="section-label" data-i18n="faq_label">FAQ</span>
+                <h2 class="section-title editorial-title" data-i18n="faq_title">Частые вопросы</h2>
+                <p class="section-subtitle" data-i18n="faq_subtitle">Ответы на популярные вопросы о курсе</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span data-i18n="faq_q1_question">Можно ли перейти на более выгодный тариф?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+                        <p data-i18n="faq_q1_answer">Да, вы можете доплатить в любой момент и получить доступ к более полному курсу. Переход доступен в любое время.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span data-i18n="faq_q2_question">Нужна ли специальная техника или оборудование?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+                        <p data-i18n="faq_q2_answer">Нет. Базовый и расширенный тарифы работают на телефоне. VIP-тариф добавляет видеосвязь для сессий.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span data-i18n="faq_q3_question">Можно ли адаптировать меню под аллергии?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+                        <p data-i18n="faq_q3_answer">Да, мы учитываем аллергии и пищевые непереносимости при составлении вашего персонального плана.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span data-i18n="faq_q4_question">Как проходит оплата?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+                        <p data-i18n="faq_q4_answer">Оплата онлайн картой в любой момент перед стартом. Цены указаны в тарифах и включают все модули курса.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span data-i18n="faq_q5_question">Можно ли заниматься с хроническими заболеваниями?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5" aria-hidden="true">
+                        <p data-i18n="faq_q5_answer">Методика универсальна, однако рекомендуется проконсультироваться с врачом перед началом программы.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span data-i18n="faq_q6_question">Как проходит обучение?</span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <span class="faq-icon-line"></span>
+                            <span class="faq-icon-line"></span>
+                        </span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6" aria-hidden="true">
+                        <p data-i18n="faq_q6_answer">Курс сочетает видеоматериалы, интерактивные упражнения и живое общение с экспертом на групповых и индивидуальных сессиях.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== КОНТАКТЫ ===================== -->
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <div class="contacts-header">
+                <span class="section-label" data-i18n="contacts_label">Контакты</span>
+                <h2 class="section-title editorial-title" data-i18n="contacts_title">Свяжитесь со мной</h2>
+                <p class="section-subtitle" data-i18n="contacts_subtitle">Готовы начать? Оставьте заявку или напишите напрямую</p>
+            </div>
+
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.14 19.14 0 0 1-6-6 19.93 19.93 0 0 1-3-7 2 2 0 0 1 1.22-2.5h3a2 2 0 0 1 2 1.72 11.7 11.7 0 0 0 .7 2.81 2 2 0 0 1-.43 2.71L8.44 12.44a15.5 15.5 0 0 0 4.32 2.28 2 2 0 0 1 2.65-1.1z"></path>
+                            </svg>
+                        </div>
+                        <span class="contact-value" data-i18n="contact_phone">[PHONE]</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <span class="contact-value" data-i18n="contact_email">[EMAIL]</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M21 13.27V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10.27"></path>
+                                <path d="M9 16l3-3 3 3"></path>
+                                <path d="M9 8h6"></path>
+                            </svg>
+                        </div>
+                        <span class="contact-value" data-i18n="contact_whatsapp">[WHATSAPP]</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M12 12h.01M12 8v8m0 0l-2-2m2 2 2-2"></path>
+                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                            </svg>
+                        </div>
+                        <span class="contact-value" data-i18n="contact_telegram">[TELEGRAM]</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"></path>
+                                <path d="M12 14c-3.86 0-7 3.14-7 7v1h14v-1c0-3.86-3.14-7-7-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="contact-value" data-i18n="contact_instagram">[INSTAGRAM]</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" autocomplete="off">
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name" data-i18n="form_name">Имя</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email" data-i18n="form_email">Email</label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message" data-i18n="form_message">Ваше сообщение</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block" data-i18n="form_submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="final-cta section" id="final-cta">
+        <!-- FINAL CTA BACKGROUND -->
+        <img src="./images/hero.jpg" alt="" class="final-cta-image" aria-hidden="true" loading="lazy" fetchpriority="low">
+        <div class="final-cta-overlay"></div>
+        <div class="container">
+            <div class="final-cta-content">
+                <div class="editorial-number editorial-number--large" aria-hidden="true">7</div>
+                <h2 class="final-cta-title" data-i18n="cta_final_title">Готовы начать путь к здоровью?</h2>
+                <p class="final-cta-subtitle" data-i18n="cta_final_subtitle">Запишитесь на консультацию и получите персональный план питания</p>
+                <a href="#contacts" class="btn btn--secondary" data-i18n="cta_final_button">Записаться сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo" data-i18n="author_name">Елена Сергеева</div>
+                <div class="footer-title" data-i18n="hero_title">Школа питания</div>
+                <p class="footer-tagline" data-i18n="hero_subtitle">Персональный подход к питанию, основанный на науке и вашем образе жизни</p>
+            </div>
+
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#about" data-i18n="nav_about">Об авторе</a></li>
+                    <li><a href="#for-whom" data-i18n="nav_for_whom">Для кого</a></li>
+                    <li><a href="#program" data-i18n="nav_program">Программа</a></li>
+                    <li><a href="#pricing" data-i18n="nav_pricing">Тарифы</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="#contacts" data-i18n="nav_contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <div class="footer-contact-item">
+                    <span data-i18n="contact_telegram">[TELEGRAM]</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span data-i18n="contact_whatsapp">[WHATSAPP]</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span data-i18n="contact_email">[EMAIL]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright" data-i18n="footer_copyright">© 2025 Школа питания. Все права защищены.</div>
+            <div class="footer-lang">
+                <button type="button" class="lang-btn footer-lang-btn active" data-lang="ru">RU</button>
+                <button type="button" class="lang-btn footer-lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn footer-lang-btn" data-lang="ro">RO</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
